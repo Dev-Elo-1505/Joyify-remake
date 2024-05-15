@@ -14,9 +14,11 @@ html {
 body {
     font-family: Inter, sans-serif;
     font-size: 2.4rem;
+    line-height: 1.5;
     color: var(--color-body);
 }
 
+/* Typography */
 h1,h2,h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
@@ -51,5 +53,30 @@ p {
 
     h3 {
         font-size: 2.4rem;
+    }
+}
+
+/* Links */
+a {text-decoration: none;}
+
+.link-arrow {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem ;
+    color: var(--color-accent);
+}
+
+.link-arrow::after {
+    content: "-->";
+    margin-left: 5px;
+    transform: margin 0.15s;
+}
+.link-arrow:hover::after {
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .link-arrow {
+        font-size: 1.5rem;
     }
 }
