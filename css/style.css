@@ -6,9 +6,10 @@
     --color-body: #918ca4;
 }
 
+*,*::after,*::before {   box-sizing: border-box;}
+
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
 }
 
 body {
@@ -163,4 +164,61 @@ a {text-decoration: none;}
     height: 64px;
     justify-content: center;
     width: 64px;
+}
+
+/* buttons */
+.btn {
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    outline: none;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+
+
+.btn--accent {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+.btn--accent:hover {
+    filter: brightness(96%);
+}
+
+.btn--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.btn--secondary:hover {
+    filter: brightness(96%);
+}
+
+.btn--outline {
+    border: 2px solid var(--color-headings);
+    background: #fff;
+    color: var(--color-headings);
+}
+
+.btn--outline:hover {
+    border: none;
+    background: var(--color-headings);
+    color: #fff;
+}
+
+.btn--block {
+    width: 100%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.5rem;
+    }
 }
