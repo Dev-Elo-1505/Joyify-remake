@@ -141,3 +141,26 @@ a {text-decoration: none;}
         padding-left: 0;
     }
 }
+
+/* Icons */
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon--primary {
+    fill: var(--color-primary);
+}
+.icon--secondary {
+    fill: var(--color-secondary);
+}
+
+.icon-container {
+    align-items: center;
+    background: #f3f9f0;
+    border-radius: 50%;
+    display: inline-flex;
+    height: 64px;
+    justify-content: center;
+    width: 64px;
+}
