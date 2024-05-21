@@ -10,11 +10,37 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    
+    <div class="collapsible collapsible--expanded">
+      <header class="collapsible__header">
+        <h2 class="collapsible__heading">PRODUCT</h2>
+        <span class="chevron-container"
+          ><i
+            class="fa-solid fa-chevron-down collapsible--chevron"
+          ></i
+        ></span>
+        <!-- <svg class="icon icon--primary collapsible--chevron">
+            <use xlink:href="./images/sprite.svg#chevron"></use>
+          </svg> -->
+      </header>
+      <div class="collapsible__content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque animi
+          quo ut ullam? Obcaecati numquam odit ipsum recusandae veritatis
+          aliquam.
+        </p>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
